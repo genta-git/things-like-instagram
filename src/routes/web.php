@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::get('/user', 'UserController@index');
 Route::get('/bbs', 'BbsController@index');
+Route::get('/hed', 'HedController@index');
 Route::post('/bbs', 'BbsController@create');
 Route::get('github', 'Github\GithubController@top');
 Route::post('github/issue', 'Github\GithubController@createIssue');

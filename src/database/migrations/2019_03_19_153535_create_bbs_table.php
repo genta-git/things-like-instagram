@@ -17,6 +17,7 @@ class CreateBbsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name'); // 追記項目
             $table->string('comment'); // 追記項目
+            $table->text('image'); // 画像に関する記述
             $table->timestamps();
         });
     }
